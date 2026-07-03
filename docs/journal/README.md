@@ -1,5 +1,11 @@
 # Journal
 
-This section contains the learning journal for the AI QA Framework project.
+This section documents the evolution of the AI QA Framework project.
 
-It includes daily notes, weekly summaries and monthly retrospectives documenting the project's evolution and key learning outcomes.
+The journal captures learning, decisions, reflections and progress throughout the project.
+
+## Structure
+
+- **daily** – Daily learning notes and session summaries.
+- **weekly** – Weekly retrospectives and consolidated learning.
+- **monthly** – Monthly progress reviews and roadmap adjustments.
