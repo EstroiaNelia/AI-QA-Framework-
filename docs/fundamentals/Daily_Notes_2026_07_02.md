@@ -3,7 +3,7 @@
 Hoje estudei a Matriz de Confusão (Confusion Matrix) e as principais métricas utilizadas na avaliação de modelos de classificação.
 
 ### Matriz de Confusão
-
+<img src="../images/confusion_matrix.jpg" alt="Matriz de Confusão" width="600">
 ![Matriz de Confusão](/docs/images/confusion_matrix.jpg)
 
 ### Conceitos Principais
