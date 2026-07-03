@@ -23,7 +23,7 @@ Hoje estudei a Matriz de Confusão (Confusion Matrix) e as principais métricas 
 
 Compreendi que a Accuracy pode ser enganadora quando existem classes desbalanceadas. Nesses casos, métricas como Precision, Recall e F1-Score fornecem uma avaliação mais fiável do desempenho do modelo.
 
-Dúvidas:
+### Dúvidas:
 
 Preciso entender melhor:
 - Benchmark suits
@@ -32,14 +32,15 @@ Preciso entender melhor:
 - Imbalanced datasets
 - LLM evals ragas
 
-Ideias para o Framework:
+### Ideias para o Framework:
 ...
-Termos novos:
+
+### Termos novos:
 - Benchmark suits
 - Performance benchmark metrics
 - Balanced datasets
 - Imbalanced datasets
 - LLM evals ragas
 
-Questões que gostaria de discutir com o Atlas:
+### Questões que gostaria de discutir com o Atlas:
 Gostaria de perceber melhor as fórmulas aprendidas e sobre as - LLM evals ragas.
