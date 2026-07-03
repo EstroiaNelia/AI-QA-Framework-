@@ -4,7 +4,7 @@ Hoje estudei a Matriz de Confusão (Confusion Matrix) e as principais métricas 
 
 ### Matriz de Confusão
 
-![Matrizs/confusion_matrix.jpg
+![Matrizs de Confusão](docs/images/confusion_matrix.jpg)
 
 ### Conceitos Principais
 
