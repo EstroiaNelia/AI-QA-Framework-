@@ -1,5 +1,43 @@
 # AI QA Framework - Project Journal
 
+## Session 003
+
+**Date**
+
+2026-07-05
+
+**Goal**
+
+Start the first development session of the AI QA Framework by creating a working definition of AI Quality Assurance.
+
+**Completed**
+
+- Created the first AI QA Framework daily note under `docs/journal/daily/`.
+- Confirmed the transition from setup mode to development mode.
+- Added the first working definition of AI Quality Assurance to `docs/framework/AI_QA_Framework.md`.
+- Created the initial structure of the main framework document.
+- Marked the remaining framework sections as `_To be drafted._`.
+
+**Key Decisions**
+
+- The project has moved from setup mode to development mode.
+- The first development artefact is a working definition of AI Quality Assurance.
+- The definition was added before drafting the Purpose section.
+- The main framework document will be developed incrementally, one section at a time.
+
+**Review Notes**
+
+- The definition is practical and vendor-independent.
+- The definition is not copied from an external source.
+- The definition supports the future Purpose, Scope and Principles sections.
+- The framework structure is intentionally incomplete at this stage.
+
+**Next Session**
+
+Review and refine the working definition of AI Quality Assurance, then begin drafting the `Purpose` section of `docs/framework/AI_QA_Framework.md`.
+
+<br>
+
 ## Session 002
 
 **Date**
