@@ -518,7 +518,228 @@ At this stage, QA uses evidence collected across the lifecycle to improve the AI
 
 ## 7. Evidence and Artefacts
 
-_To be drafted._
+Evidence and artefacts are central to the AI QA Framework because they make quality decisions observable, reviewable and traceable.
+
+In AI-based systems, QA should not rely only on final test results or model performance metrics. Quality evidence should show how the system was understood, what risks were identified, what was tested, what limitations are known, what decisions were made and whether the system continues to behave acceptably after deployment.
+
+The artefacts described in this section are not mandatory in every project. They should be selected according to the system context, risk level, lifecycle stage, regulatory expectations, delivery model and organisational maturity.
+
+### 7.1 Evidence Principles
+
+QA evidence should follow a small set of principles.
+
+#### Traceable
+
+Evidence should be linked to the relevant requirement, risk, assumption, dataset, model, AI component, test, defect, decision or monitoring outcome.
+
+Traceability helps explain why a quality decision was made and what information supported it.
+
+#### Reviewable
+
+Evidence should be understandable by the people who need to review or use it.
+
+This may include QA teams, developers, data scientists, product owners, business stakeholders, auditors, security teams, compliance teams or operational teams.
+
+#### Risk-based
+
+The level of evidence should be proportional to the level of risk.
+
+High-impact AI-based systems should require stronger evidence than low-risk internal tools or experimental prototypes.
+
+#### Current
+
+Evidence should be kept up to date when the AI-based system, data, model, configuration, prompt, integration, usage pattern or operating environment changes.
+
+Outdated evidence can create false confidence.
+
+#### Decision-oriented
+
+Evidence should support decisions.
+
+The goal is not to produce documentation for its own sake, but to support informed decisions about quality, release readiness, risk acceptance, monitoring, reassessment and continuous improvement.
+
+### 7.2 Core Artefact Categories
+
+The framework groups artefacts into categories that support different QA concerns across the AI lifecycle.
+
+### 7.2.1 Context and Risk Artefacts
+
+Context and risk artefacts help clarify why the AI-based system exists, how it is expected to be used and what could go wrong.
+
+Typical artefacts include:
+
+- problem statement;
+- intended use description;
+- stakeholder and user mapping;
+- initial quality expectations;
+- assumption and constraint log;
+- AI-specific risk assessment;
+- domain-specific risk assessment;
+- acceptance criteria;
+- decision logs.
+
+These artefacts are especially relevant during problem understanding, planning, acceptance and release readiness.
+
+### 7.2.2 Data Quality Artefacts
+
+Data quality artefacts provide evidence about the suitability, limitations and risks of the data used by the AI-based system.
+
+Typical artefacts include:
+
+- data source inventory;
+- data lineage documentation;
+- data profiling results;
+- missing values analysis;
+- outlier analysis;
+- data imbalance analysis;
+- data duplication checks;
+- data leakage checks;
+- data preparation review notes;
+- data limitation log;
+- data drift risk notes.
+
+These artefacts help QA teams understand whether data issues may affect model behaviour, system reliability or user trust.
+
+### 7.2.3 AI Component Validation Artefacts
+
+AI component validation artefacts provide evidence about the behaviour, performance and limitations of the AI component before or during system integration.
+
+Typical artefacts include:
+
+- validation plan;
+- metric selection rationale;
+- validation results;
+- error analysis;
+- edge-case test results;
+- robustness assessment;
+- fairness or bias assessment;
+- explainability review notes;
+- prompt, configuration or fine-tuning review notes, when applicable;
+- known limitation log;
+- validation summary.
+
+These artefacts help determine whether the AI component behaves adequately for its intended purpose.
+
+### 7.2.4 System Testing Artefacts
+
+System testing artefacts provide evidence about how the AI component behaves as part of the complete software system.
+
+Typical artefacts include:
+
+- integration test cases;
+- end-to-end test cases;
+- API and interface validation results;
+- input and output handling test results;
+- fallback mechanism test results;
+- error handling test results;
+- logging and traceability checks;
+- user workflow test evidence;
+- non-functional test evidence;
+- defect records.
+
+These artefacts help determine whether the AI-based system works acceptably in realistic workflows and operational conditions.
+
+### 7.2.5 Release and Acceptance Artefacts
+
+Release and acceptance artefacts support the decision on whether the AI-based system is ready to be released or used.
+
+Typical artefacts include:
+
+- test summary report;
+- validation summary;
+- updated risk assessment;
+- open defect and limitation log;
+- acceptance criteria review;
+- monitoring readiness checklist;
+- QA release recommendation;
+- go/no-go decision record;
+- risk acceptance record.
+
+These artefacts should make release decisions transparent and based on evidence rather than assumptions.
+
+### 7.2.6 Monitoring and Operational Artefacts
+
+Monitoring and operational artefacts provide evidence about the behaviour of the AI-based system after deployment.
+
+Typical artefacts include:
+
+- monitoring dashboards or reports;
+- data drift reports;
+- model or AI component degradation indicators;
+- incident records;
+- user feedback analysis;
+- alert and escalation records;
+- production quality review notes;
+- post-release assessment results;
+- retraining, recalibration or configuration change records.
+
+These artefacts help determine whether the system continues to behave acceptably in real use.
+
+### 7.2.7 Continuous Improvement Artefacts
+
+Continuous improvement artefacts support learning and controlled evolution of the AI-based system and the QA approach.
+
+Typical artefacts include:
+
+- lessons learned;
+- updated risk assessment;
+- updated test scenarios;
+- regression test results;
+- updated monitoring rules;
+- change assessment notes;
+- updated documentation;
+- improvement backlog;
+- updated decision records.
+
+These artefacts help ensure that quality evidence leads to improvement rather than remaining static documentation.
+
+### 7.3 Minimum Evidence Set
+
+Not every project needs every artefact. However, for a first version of the framework, a minimum evidence set should normally include:
+
+- intended use description;
+- AI-specific risk assessment;
+- data quality assessment;
+- AI component validation summary;
+- system test evidence;
+- known limitations;
+- QA release recommendation;
+- monitoring approach, when the system is deployed or used operationally.
+
+For higher-risk systems, this minimum evidence set should be expanded with stronger traceability, more detailed validation, fairness and bias analysis, explainability evidence, security and privacy input, operational monitoring and formal decision records.
+
+### 7.4 Evidence Traceability
+
+Evidence should not be isolated across documents, tools or teams.
+
+Where possible, QA teams should maintain traceability between:
+
+- intended use and acceptance criteria;
+- risks and QA activities;
+- data issues and validation results;
+- validation findings and known limitations;
+- test results and release recommendations;
+- incidents and continuous improvement actions;
+- monitoring results and reassessment decisions.
+
+Traceability does not need to be complex at the beginning. It can start with simple links between documents, tables, issues, test cases, risks and decisions.
+
+The important point is that quality decisions should be explainable from the evidence available.
+
+### 7.5 Artefact Ownership
+
+Artefacts may be created by different roles, but QA should help ensure that relevant evidence exists, is reviewable and supports quality decisions.
+
+Possible ownership examples include:
+
+- product teams owning intended use, business context and acceptance expectations;
+- data teams owning data lineage, data preparation and data quality evidence;
+- data scientists or AI engineers owning model or AI component validation evidence;
+- QA teams owning test evidence, defect records, QA review notes and release recommendations;
+- security, privacy, legal or compliance specialists owning specialist assessments;
+- operations or support teams owning monitoring, incident and post-release evidence.
+
+Ownership may vary by organisation. The framework does not prescribe a fixed ownership model, but it assumes that evidence responsibilities should be explicit.
 
 ## 8. Roles and Responsibilities
 
