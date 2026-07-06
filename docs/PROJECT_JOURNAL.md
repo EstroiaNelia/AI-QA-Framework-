@@ -1,5 +1,79 @@
 # AI QA Framework - Project Journal
 
+## Session 007
+
+**Date**
+
+2026-07-06
+
+**Goal**
+
+Review the complete glossary against the main framework document and identify missing or inconsistent terms before starting reusable framework templates.
+
+**Completed**
+
+- Reviewed the heading structure of `docs/framework/AI_QA_Framework.md`.
+- Extracted key framework concepts from the main framework document.
+- Reviewed the existing glossary structure in `docs/fundamentals/AI_Glossary.md`.
+- Identified missing glossary terms used in the main framework document.
+- Identified the inconsistency between `AI system` and `AI-based system`.
+- Defined `AI system` as the preferred term.
+- Kept `AI-based system` as an alternative term.
+- Expanded the glossary with additional QA-oriented terms, including:
+  - `AI system`
+  - `Continuous improvement`
+  - `Continuous quality`
+  - `Data quality`
+  - `Evidence traceability`
+  - `Explainability`
+  - `Fairness`
+  - `Governance`
+  - `Governance checkpoint`
+  - `Intended use`
+  - `Misuse risk`
+  - `Model behaviour`
+  - `Monitoring`
+  - `Operational monitoring`
+  - `Privacy`
+  - `QA Decision Record`
+  - `Release readiness`
+  - `Reliability`
+  - `Reassessment trigger`
+  - `Robustness`
+  - `Security`
+  - `System integration`
+  - `System testing`
+  - `Traceability`
+  - `Transparency`
+  - `Usability`
+  - `Validation`
+  - `Vendor independence`
+- Validated the glossary with `git diff --check`.
+- Committed the glossary update.
+
+**Key Decisions**
+
+- `AI system` is the preferred term in the glossary.
+- `AI-based system` remains as an alternative term only.
+- Glossary terms should continue to be defined from a practical QA perspective.
+- The glossary should stay aligned with the main framework document before reusable templates are created.
+
+**Review Notes**
+
+- The glossary now covers the main terminology used in `docs/framework/AI_QA_Framework.md`.
+- The terminology is more consistent and ready to support template creation.
+- Further glossary updates may be needed when templates, examples and practical checklists are created.
+
+**Commit**
+
+- `fd62a10` — `docs: expand AI QA glossary terminology`
+
+**Next Session**
+
+Start creating the first reusable framework templates, beginning with a lightweight `AI System Context Template`.
+
+<br>
+
 ## Session 006
 
 **Date**
