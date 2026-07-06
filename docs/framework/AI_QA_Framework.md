@@ -1142,4 +1142,158 @@ The AI QA Framework does not prescribe a single governance model. It provides a 
 
 ## 10. References and Influences
 
-_To be drafted._
+The AI QA Framework is an original, practical framework. It is not a copy of any standard, syllabus, regulation, vendor methodology or proprietary framework.
+
+However, it is influenced by recognised bodies of knowledge related to software quality, software testing, AI risk management, AI governance, responsible AI, security and quality assurance practice.
+
+The references and influences listed in this section help position the framework and support its evolution. They should be reviewed periodically because AI standards, regulations and best practices continue to evolve.
+
+### 10.1 Use of References
+
+The references listed here are used as conceptual influences.
+
+They may support terminology, structure, quality concerns, risk thinking, governance practices, testing approaches or evidence expectations.
+
+They are not used as copied source material.
+
+This framework does not claim compliance with any specific standard or regulation unless a dedicated compliance mapping is created and maintained separately.
+
+### 10.2 AI Governance and Risk Management
+
+The framework is influenced by AI governance and risk management sources that help structure how AI-related risks should be identified, assessed, documented and reviewed.
+
+Relevant influences include:
+
+- ISO/IEC 42001, Artificial Intelligence Management System;
+- ISO/IEC 23894, Artificial Intelligence Guidance on Risk Management;
+- NIST AI Risk Management Framework;
+- EU Artificial Intelligence Act;
+- ISO/IEC 42005, AI System Impact Assessment.
+
+These sources influence the framework in areas such as governance, risk-based thinking, accountability, impact assessment, monitoring, documentation and reassessment.
+
+### 10.3 Software Quality and Testing
+
+The framework is also influenced by established software quality and testing knowledge.
+
+Relevant influences include:
+
+- ISO/IEC 25010, Systems and Software Product Quality Model;
+- ISO/IEC 25012, Data Quality Model;
+- ISO/IEC/IEEE 29119, Software Testing;
+- ISTQB Software Testing body of knowledge;
+- ISTQB Certified Tester AI Testing syllabus.
+
+These sources influence the framework in areas such as quality characteristics, test process thinking, test evidence, data quality, validation, test design, defect management and lifecycle-based QA activities.
+
+### 10.4 AI Testing and AI Quality Assurance
+
+AI-based systems require QA practices that go beyond traditional software testing.
+
+The framework is influenced by AI testing and AI quality assurance practices related to:
+
+- input data testing;
+- data quality assessment;
+- model validation;
+- AI component validation;
+- robustness testing;
+- bias and fairness assessment;
+- explainability review;
+- testing of non-deterministic behaviour;
+- testing of generative AI outputs;
+- monitoring after deployment.
+
+These influences support the framework's position that AI Quality Assurance is not limited to testing model outputs. It includes data, model or AI component behaviour, system integration, user interaction, risk, evidence, monitoring and continuous improvement.
+
+### 10.5 Security, Privacy and Misuse Risk
+
+The framework recognises that security, privacy and misuse risks may affect the quality and acceptability of AI-based systems.
+
+Relevant influences include:
+
+- OWASP Top 10 for Large Language Model Applications;
+- secure software development practices;
+- privacy and data protection practices;
+- adversarial testing practices;
+- misuse and abuse case analysis.
+
+These sources influence the framework in areas such as prompt injection, insecure output handling, sensitive information leakage, adversarial inputs, access control, monitoring and harmful use scenarios.
+
+The AI QA Framework does not replace specialist security, privacy, legal or compliance assessments. It provides a QA-oriented structure that can help ensure those concerns are visible and considered in quality decisions.
+
+### 10.6 Responsible AI and Human Oversight
+
+The framework is influenced by responsible AI principles related to trustworthiness, transparency, accountability, fairness, human oversight and harm prevention.
+
+These influences support the inclusion of quality dimensions such as:
+
+- explainability and transparency;
+- fairness and bias;
+- human oversight and usability;
+- monitoring and continuous quality;
+- governance and decision records.
+
+The framework treats these topics from a QA perspective. The goal is to make them observable, testable, reviewable and supported by evidence where possible.
+
+### 10.7 Practical QA Experience
+
+The framework is also influenced by practical Quality Assurance experience in software delivery.
+
+This includes experience with:
+
+- test strategy definition;
+- risk-based testing;
+- test planning and prioritisation;
+- defect management;
+- release readiness assessment;
+- stakeholder communication;
+- traceability;
+- evidence-based reporting;
+- continuous improvement.
+
+This practical QA perspective is important because the framework is intended to be usable by QA professionals, test leads, product teams and delivery teams, not only by AI specialists.
+
+### 10.8 Vendor Independence
+
+The framework does not depend on a specific AI vendor, cloud provider, model provider, testing tool, MLOps platform or development methodology.
+
+Vendor-specific tools may be used to implement parts of the framework, but the framework itself should remain technology-agnostic.
+
+This principle supports reuse across different contexts, including:
+
+- traditional Machine Learning systems;
+- Generative AI systems;
+- third-party AI components;
+- AI-enabled software products;
+- internal AI tools;
+- regulated and non-regulated domains.
+
+### 10.9 Future Reference Mapping
+
+Future versions of the framework may include dedicated mappings to selected standards, regulations or bodies of knowledge.
+
+Possible future mappings include:
+
+- AI QA Framework to ISO/IEC 42001;
+- AI QA Framework to ISO/IEC 23894;
+- AI QA Framework to NIST AI RMF;
+- AI QA Framework to ISTQB CT-AI;
+- AI QA Framework to EU AI Act quality and governance expectations;
+- AI QA Framework to OWASP LLM and GenAI risks.
+
+These mappings should be created separately from the main framework document to avoid making the core framework too heavy.
+
+### 10.10 Reference Review
+
+The references and influences should be reviewed periodically.
+
+A review should be considered when:
+
+- a relevant standard is updated;
+- a regulation changes or becomes applicable;
+- a new AI testing body of knowledge is published;
+- new risks emerge for Generative AI or AI-enabled systems;
+- the framework scope changes;
+- the framework is applied to a higher-risk domain.
+
+The goal is to keep the framework aligned with recognised practice while preserving its own structure, language and practical QA focus.
