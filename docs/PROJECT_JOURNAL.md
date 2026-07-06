@@ -1,5 +1,56 @@
 # AI QA Framework - Project Journal
 
+## Session 005
+
+**Date**
+
+2026-07-06
+
+**Goal**
+
+Review the Purpose section and draft the Scope section of the AI QA Framework, then continue developing the remaining core sections of the main framework document.
+
+**Completed**
+
+- Drafted the `Purpose` section.
+- Drafted the `Scope` section.
+- Drafted the `Framework Principles` section.
+- Drafted the `AI System Quality Dimensions` section.
+- Drafted the `AI QA Lifecycle` section.
+- Drafted the `QA Activities by Lifecycle Stage` section.
+- Drafted the `Evidence and Artefacts` section.
+- Drafted the `Roles and Responsibilities` section.
+- Drafted the `Governance and Decision Records` section.
+- Drafted the `References and Influences` section.
+- Reviewed coherence from the definition through the lifecycle section.
+- Adjusted terminology to prefer `AI-based system` for the overall system and `AI component` for AI-related parts of the system.
+- Added governance distinction between Architecture Decision Records and QA Decision Records.
+- Completed the first full draft of `docs/framework/AI_QA_Framework.md`.
+
+**Key Decisions**
+
+- The AI QA Framework will use `AI-based system` as the preferred term for the complete system.
+- The term `AI component` will be used when referring to a specific AI-related part of the system.
+- The framework will remain vendor-independent and adaptable to different AI contexts.
+- Evidence is treated as central to making quality decisions observable, reviewable and traceable.
+- Governance should remain proportional, evidence-based and risk-based.
+- References are treated as conceptual influences, not as copied source material.
+- The framework does not claim compliance with any standard or regulation unless a dedicated mapping is created separately.
+
+**Review Notes**
+
+- The first full draft is coherent as a foundation document.
+- The sequence Definition, Purpose, Scope, Principles, Quality Dimensions, Lifecycle, Activities, Evidence, Roles, Governance and References is logical.
+- The document is practical, QA-oriented and independent of specific tools or vendors.
+- Some sections are intentionally broad and should be refined after the glossary, templates and examples are created.
+- Several glossary terms should be added or refined in `docs/fundamentals/AI_Glossary.md`.
+
+**Next Session**
+
+Review the complete first draft of `docs/framework/AI_QA_Framework.md`, identify glossary terms and begin updating `docs/fundamentals/AI_Glossary.md`.
+
+<br>
+
 ## Session 004
 
 **Date**
