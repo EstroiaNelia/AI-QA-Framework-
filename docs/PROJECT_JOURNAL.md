@@ -1,5 +1,42 @@
 # AI QA Framework - Project Journal
 
+## Session 004
+
+**Date**
+
+2026-07-06
+
+**Goal**
+
+Review and refine the working definition of AI Quality Assurance and draft the Purpose section of the main AI QA Framework document.
+
+**Completed**
+
+- Created the daily note for Session 004 under `docs/journal/daily/`.
+- Reviewed the working definition of AI Quality Assurance.
+- Refined the main framework document structure where needed.
+- Drafted the `Purpose` section of `docs/framework/AI_QA_Framework.md`.
+- Checked consistency between the AI Quality Assurance definition and the Purpose section.
+- Committed the framework document and daily note changes.
+
+**Key Decisions**
+
+- The `Purpose` section should explain why the AI QA Framework exists before expanding into scope, principles or lifecycle activities.
+- The framework will continue to be developed incrementally, one section at a time.
+- The working definition of AI Quality Assurance remains the conceptual anchor for the next sections.
+
+**Review Notes**
+
+- The Purpose section should remain practical, vendor-independent and aligned with QA practice.
+- The wording should avoid sounding like a copied standard or certification definition.
+- The Purpose section should support later expansion into Scope, Framework Principles and AI QA Lifecycle.
+
+**Next Session**
+
+Review the `Purpose` section and begin drafting the `Scope` section of `docs/framework/AI_QA_Framework.md`.
+
+<br>
+
 ## Session 003
 
 **Date**
