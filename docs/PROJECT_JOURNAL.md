@@ -1,5 +1,62 @@
 # AI QA Framework - Project Journal
 
+## Session 006
+
+**Date**
+
+2026-07-06
+
+**Goal**
+
+Review the complete first draft of the AI QA Framework and start consolidating glossary terms in `docs/fundamentals/AI_Glossary.md`.
+
+**Completed**
+
+- Created the daily note for Session 006.
+- Reviewed the role of the glossary in supporting the main framework document.
+- Kept the title `AI Glossary for Quality Assurance`.
+- Updated the Purpose section of the glossary.
+- Aligned the definition of `AI Quality Assurance` with the main framework document.
+- Added and refined key glossary terms, including:
+  - `AI-based system`
+  - `AI component`
+  - `AI QA Lifecycle`
+  - `AI-specific risk`
+  - `Artefact`
+  - `Bias`
+  - `Data drift`
+  - `Decision record`
+  - `Evidence`
+  - `Fallback mechanism`
+  - `Hallucination`
+  - `Human oversight`
+  - `Model degradation`
+  - `Prompt injection`
+  - `Quality dimension`
+  - `Residual risk`
+- Confirmed that the glossary uses practical QA-oriented definitions rather than replacing formal standards or certification definitions.
+- Committed the glossary update and Session 006 daily note.
+
+**Key Decisions**
+
+- The glossary will support consistent terminology across the AI QA Framework.
+- Glossary definitions should be practical, QA-oriented and aligned with the main framework document.
+- The glossary does not claim to replace formal definitions from standards, regulations or certification bodies.
+- The glossary will evolve incrementally as new framework documents, templates and examples are created.
+
+**Review Notes**
+
+- The glossary is now better aligned with `docs/framework/AI_QA_Framework.md`.
+- The first set of terms covers the most central concepts used in the framework.
+- The alphabetic structure is suitable for future expansion.
+- Further review will be needed after additional templates and examples are created.
+
+**Next Session**
+
+Review the complete glossary against the main framework document and identify any missing or inconsistent terms before starting reusable framework templates.
+
+<br>
+
 ## Session 005
 
 **Date**
