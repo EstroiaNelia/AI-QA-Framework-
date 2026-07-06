@@ -743,11 +743,402 @@ Ownership may vary by organisation. The framework does not prescribe a fixed own
 
 ## 8. Roles and Responsibilities
 
-_To be drafted._
+AI Quality Assurance is a shared responsibility. Although QA teams play a central role in defining, assessing, testing and evidencing quality, they cannot assure AI quality alone.
+
+AI-based systems usually involve product decisions, data decisions, model or AI component decisions, software engineering, operational monitoring, governance and specialist assessments. The responsibilities described in this section are intended to clarify collaboration, not to prescribe a fixed organisational structure.
+
+The same person or team may cover multiple responsibilities depending on the organisation, project size and level of AI maturity.
+
+### 8.1 Quality Assurance
+
+QA is responsible for helping make AI quality observable, testable, reviewable and evidence-based.
+
+Typical responsibilities include:
+
+- supporting the definition of quality expectations and acceptance criteria;
+- identifying AI-specific quality risks;
+- reviewing testability of AI-based system behaviour;
+- defining QA activities across the AI lifecycle;
+- designing and executing test activities;
+- reviewing data, model, integration and system-level evidence;
+- analysing defects, limitations and residual risks;
+- supporting release readiness decisions;
+- ensuring that quality evidence is documented and traceable;
+- supporting monitoring and continuous improvement activities.
+
+QA should act as a critical reviewer of quality evidence, not only as a test execution function.
+
+### 8.2 Product and Business Stakeholders
+
+Product and business stakeholders are responsible for defining why the AI-based system exists, what value it should provide and what outcomes are acceptable or unacceptable.
+
+Typical responsibilities include:
+
+- defining the problem, business objective and intended use;
+- identifying users, affected groups and operational context;
+- clarifying expected outcomes and business rules;
+- defining acceptance expectations;
+- identifying business risks and impact;
+- reviewing known limitations and residual risks;
+- participating in release readiness and risk acceptance decisions.
+
+Product and business stakeholders should ensure that AI quality is assessed against real use, not only technical performance.
+
+### 8.3 Data Roles
+
+Data roles are responsible for the quality, suitability, preparation and governance of data used by the AI-based system.
+
+Depending on the organisation, these responsibilities may be covered by data engineers, data analysts, data scientists, data stewards or data governance teams.
+
+Typical responsibilities include:
+
+- documenting data sources and data lineage;
+- assessing data completeness, consistency, accuracy and representativeness;
+- identifying missing values, outliers, imbalance, duplication and leakage risks;
+- documenting data preparation and transformation steps;
+- supporting data quality checks;
+- identifying data limitations and possible impact;
+- supporting monitoring for data drift or changes in input patterns.
+
+Data roles should provide evidence that allows QA and stakeholders to understand how data quality may affect AI behaviour.
+
+### 8.4 AI Engineering and Data Science
+
+AI engineering and data science roles are responsible for the design, configuration, validation and evolution of AI components.
+
+Depending on the context, this may include developing models, selecting third-party models, configuring AI services, designing prompts, fine-tuning models or validating AI component behaviour.
+
+Typical responsibilities include:
+
+- defining AI component objectives and assumptions;
+- selecting models, techniques, prompts or configurations;
+- selecting relevant evaluation metrics;
+- validating AI component behaviour;
+- analysing errors, limitations and failure patterns;
+- assessing robustness, fairness and explainability where applicable;
+- documenting model, prompt, configuration or fine-tuning decisions;
+- supporting reassessment after changes or degradation;
+- collaborating with QA on test scenarios and validation evidence.
+
+AI engineering and data science roles should make AI component behaviour understandable and reviewable by other stakeholders.
+
+### 8.5 Software Engineering
+
+Software engineering roles are responsible for integrating AI components into the broader software system.
+
+Typical responsibilities include:
+
+- implementing system integration with AI components;
+- managing APIs, data flows and dependencies;
+- implementing input validation and output handling;
+- implementing fallback mechanisms and error handling;
+- supporting logging, traceability and observability;
+- ensuring maintainability, reliability and performance of the system;
+- supporting automated checks where appropriate;
+- fixing defects identified during QA activities.
+
+Software engineering should ensure that the AI component works safely and reliably within the complete system, not only in isolation.
+
+### 8.6 Security, Privacy, Legal and Compliance Specialists
+
+Specialist roles are responsible for assessing concerns that require specific expertise beyond general QA.
+
+These roles may include security teams, privacy specialists, legal advisors, compliance officers, risk managers or ethics reviewers.
+
+Typical responsibilities include:
+
+- assessing security risks related to AI components, data and integrations;
+- reviewing privacy and data protection concerns;
+- assessing legal, regulatory or contractual obligations;
+- reviewing misuse, abuse or harmful use scenarios;
+- advising on auditability, explainability and accountability expectations;
+- supporting risk acceptance or escalation decisions;
+- providing specialist evidence for release and governance decisions.
+
+The AI QA Framework does not replace specialist assessments. QA should collaborate with these roles and ensure that relevant specialist evidence is considered in quality decisions.
+
+### 8.7 Operations and Support
+
+Operations and support roles are responsible for observing and supporting the AI-based system after deployment.
+
+Typical responsibilities include:
+
+- monitoring production behaviour;
+- reviewing alerts, incidents and user feedback;
+- tracking operational failures or quality degradation;
+- supporting escalation and incident handling;
+- maintaining monitoring dashboards or reports;
+- identifying patterns that may indicate data drift, model degradation or misuse;
+- supporting post-release quality reviews;
+- feeding operational evidence into continuous improvement activities.
+
+Operations and support teams help determine whether the AI-based system continues to behave acceptably in real use.
+
+### 8.8 Governance and Decision-Making
+
+Governance responsibilities ensure that quality decisions are explicit, evidence-based and accountable.
+
+These responsibilities may be covered by product leadership, delivery leadership, architecture boards, risk committees, governance forums or designated decision owners.
+
+Typical responsibilities include:
+
+- defining decision-making authority;
+- reviewing quality evidence and residual risks;
+- approving or rejecting release recommendations;
+- accepting, escalating or mitigating risks;
+- ensuring that decision records are maintained;
+- reviewing whether monitoring and reassessment obligations are met;
+- ensuring alignment with organisational policies and external obligations.
+
+Governance should ensure that AI quality decisions are not informal, undocumented or based only on technical metrics.
+
+### 8.9 Responsibility Matrix
+
+The table below provides a simplified view of how responsibilities may be distributed.
+
+| Area | Primary Responsibility | Supporting Roles |
+|---|---|---|
+| Intended use and business context | Product and Business Stakeholders | QA, Governance |
+| Quality expectations and acceptance criteria | Product and Business Stakeholders | QA, AI Engineering, Software Engineering |
+| AI-specific risk identification | QA | Product, Data Roles, AI Engineering, Security, Compliance |
+| Data quality evidence | Data Roles | QA, AI Engineering |
+| AI component validation | AI Engineering and Data Science | QA, Product, Data Roles |
+| System integration and testing | Software Engineering and QA | AI Engineering, Product |
+| Security and privacy assessment | Security and Privacy Specialists | QA, Software Engineering, Data Roles |
+| Release readiness recommendation | QA | Product, AI Engineering, Software Engineering, Operations |
+| Risk acceptance and go/no-go decision | Governance and Decision Owners | QA, Product, Specialist Roles |
+| Operational monitoring | Operations and Support | QA, AI Engineering, Software Engineering |
+| Continuous improvement | Product and Delivery Teams | QA, Operations, AI Engineering, Data Roles |
+
+This matrix should be adapted to each organisation. Its purpose is to make responsibilities explicit, not to impose a fixed delivery model.
 
 ## 9. Governance and Decision Records
 
-_To be drafted._
+Governance in the AI QA Framework ensures that quality decisions are explicit, evidence-based, traceable and reviewable.
+
+AI-based systems may introduce uncertainty, probabilistic behaviour, data dependency, model degradation, bias, explainability limitations and operational risks. For this reason, important quality decisions should not remain informal or undocumented.
+
+Governance does not mean adding unnecessary bureaucracy. Its purpose is to ensure that relevant decisions are made by the right people, using appropriate evidence, with clear ownership and review points.
+
+### 9.1 Governance Objectives
+
+The governance approach in this framework has five main objectives:
+
+- ensure that AI quality decisions are based on evidence;
+- clarify who is responsible for making and approving decisions;
+- document the rationale behind important decisions;
+- make risks, limitations and assumptions visible;
+- support reassessment when the system, data, model, context or risk changes.
+
+Governance should help teams answer a simple question:
+
+> Why was this AI-based system considered acceptable, and what evidence supported that decision?
+
+### 9.2 Governance Principles
+
+AI QA governance should follow a set of practical principles.
+
+#### Evidence-based
+
+Quality decisions should be supported by evidence such as test results, validation summaries, risk assessments, data quality checks, monitoring outputs, defect records and known limitation logs.
+
+#### Risk-based
+
+The level of governance should be proportional to the level of risk.
+
+Higher-risk AI-based systems should require stronger evidence, more formal reviews and clearer decision records.
+
+#### Traceable
+
+Important decisions should be linked to the evidence, risks, assumptions, artefacts or lifecycle stage that supported them.
+
+Traceability helps teams explain and review past decisions.
+
+#### Accountable
+
+Decision ownership should be explicit.
+
+It should be clear who reviewed the evidence, who accepted the residual risk and who approved release or continued operation.
+
+#### Reviewable
+
+Governance decisions should be revisited when relevant changes occur.
+
+AI quality may change over time due to data drift, model degradation, configuration changes, prompt changes, new usage patterns, incidents or external changes.
+
+### 9.3 Decisions That Should Be Recorded
+
+Not every operational detail needs a formal decision record. However, the following decisions should normally be recorded when they affect quality, risk, release readiness or operational acceptability.
+
+#### Intended Use Decisions
+
+Examples include:
+
+- approval of the intended use of the AI-based system;
+- confirmation of the target users or affected groups;
+- agreement on unacceptable uses or out-of-scope scenarios;
+- approval of assumptions and constraints.
+
+#### Quality and Risk Decisions
+
+Examples include:
+
+- acceptance of quality criteria;
+- prioritisation of AI-specific risks;
+- acceptance of known data limitations;
+- acceptance of model or AI component limitations;
+- acceptance of fairness, explainability, robustness or monitoring limitations.
+
+#### Validation and Testing Decisions
+
+Examples include:
+
+- approval of selected validation metrics;
+- acceptance of validation results;
+- acceptance of test coverage limitations;
+- approval of unresolved defects or residual risks;
+- decision to perform additional testing or reassessment.
+
+#### Release Readiness Decisions
+
+Examples include:
+
+- QA release recommendation;
+- go/no-go decision;
+- risk acceptance decision;
+- approval of monitoring readiness;
+- approval of fallback or escalation mechanisms.
+
+#### Operational Decisions
+
+Examples include:
+
+- decision to continue operation after an incident;
+- decision to retrain, recalibrate, reconfigure or replace an AI component;
+- decision to update monitoring thresholds;
+- decision to restrict usage;
+- decision to rollback or disable AI-supported functionality.
+
+### 9.4 Decision Record Structure
+
+Decision records should be short, practical and easy to review.
+
+A decision record should normally include:
+
+| Field | Description |
+|---|---|
+| Title | Short name of the decision |
+| Date | Date when the decision was made |
+| Status | Proposed, Accepted, Rejected, Superseded or Under Review |
+| Context | Why the decision was needed |
+| Decision | What was decided |
+| Rationale | Why this option was selected |
+| Evidence | Evidence used to support the decision |
+| Risks and Limitations | Known residual risks, limitations or assumptions |
+| Owner | Person, role or group accountable for the decision |
+| Review Trigger | Conditions that should cause the decision to be revisited |
+
+The structure may be adapted to the organisation, but the decision should remain understandable without requiring informal knowledge.
+
+### 9.5 Architecture Decision Records and QA Decision Records
+
+This framework distinguishes between two related types of decision records.
+
+#### Architecture Decision Records
+
+Architecture Decision Records document structural or architectural decisions about the framework, repository, design approach or technical direction.
+
+Examples include:
+
+- repository structure decisions;
+- documentation structure decisions;
+- framework design decisions;
+- lifecycle or taxonomy decisions;
+- tooling or format decisions.
+
+In this repository, Architecture Decision Records are stored under:
+
+```text
+docs/adr/
+```
+
+#### QA Decision Records
+
+QA Decision Records document quality-related decisions about an AI-based system being assessed with the framework.
+
+Examples include:
+
+- acceptance of a known model limitation;
+- approval of a release recommendation;
+- acceptance of residual risk;
+- decision to require additional monitoring;
+- decision to reassess after data drift;
+- decision to reject release readiness.
+
+QA Decision Records may be stored in a project-specific location, test management tool, governance tool or documentation repository, depending on the organisation.
+
+### 9.6 Governance Checkpoints Across the AI QA Lifecycle
+
+Governance should be applied at meaningful points across the lifecycle, not only at release time.
+
+| Lifecycle Stage | Governance Focus |
+|---|---|
+| Problem and Context Understanding | Confirm intended use, stakeholders, impact and initial risks |
+| Data Assessment and Preparation | Review data suitability, limitations and lineage |
+| AI Component Development and Validation | Review validation approach, metrics, behaviour and limitations |
+| System Integration and Testing | Review system-level quality evidence and unresolved defects |
+| Acceptance and Release Readiness | Review QA recommendation, residual risks and go/no-go decision |
+| Deployment and Operational Monitoring | Review production behaviour, incidents and monitoring evidence |
+| Continuous Improvement | Review lessons learned, reassessment needs and improvement actions |
+
+These checkpoints help ensure that quality is governed throughout the lifecycle rather than inspected only at the end.
+
+### 9.7 Reassessment Triggers
+
+Some decisions should be reviewed when relevant changes occur.
+
+Typical reassessment triggers include:
+
+- significant changes in input data;
+- data drift or model degradation;
+- changes to the AI model, prompt, configuration or fine-tuning;
+- changes to system integration or business workflow;
+- new user groups or usage patterns;
+- production incidents or harmful outputs;
+- regulatory, legal, security or compliance changes;
+- repeated user complaints or feedback patterns;
+- changes in acceptance criteria or risk tolerance;
+- evidence that previous assumptions are no longer valid.
+
+Reassessment does not always mean repeating all previous QA activities. It means determining what needs to be reviewed, retested, monitored or reapproved based on the change and associated risk.
+
+### 9.8 Governance Outputs
+
+Governance activities should produce clear outputs that can support accountability and future review.
+
+Typical outputs include:
+
+- decision records;
+- risk acceptance records;
+- release readiness decisions;
+- monitoring review notes;
+- reassessment decisions;
+- change impact assessments;
+- escalation records;
+- updated assumptions and limitations;
+- updated governance or QA recommendations.
+
+The goal is to ensure that important AI quality decisions can be explained later using available evidence.
+
+### 9.9 Practical Governance Guidance
+
+The governance approach should remain proportional.
+
+For low-risk prototypes or internal experiments, lightweight decision notes may be sufficient.
+
+For high-impact AI-based systems, governance may require formal review boards, stronger evidence, specialist assessments, approval workflows and periodic reassessment.
+
+The AI QA Framework does not prescribe a single governance model. It provides a structure that helps teams decide what should be reviewed, who should decide, what evidence is needed and when decisions should be revisited.
 
 ## 10. References and Influences
 
