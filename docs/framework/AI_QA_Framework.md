@@ -267,7 +267,254 @@ Typical QA activities include:
 
 ## 6. QA Activities by Lifecycle Stage
 
-_To be drafted._
+This section maps practical QA activities to the AI QA Lifecycle defined in the previous section.
+
+The activities are not intended to be exhaustive or mandatory in every project. They should be selected and adapted according to the system context, risk level, AI technology, delivery model, available evidence and organisational maturity.
+
+The activities can be applied to different AI contexts, including traditional Machine Learning models, Generative AI solutions, AI components provided by third parties and AI-enabled software products.
+
+The purpose of this section is to help QA teams understand what can be assessed, tested, reviewed or monitored at each stage of the lifecycle.
+
+### 6.1 Problem and Context Understanding
+
+At this stage, QA helps clarify what the AI-based system is expected to do, who may be affected by it and what quality risks should be considered from the beginning.
+
+#### QA Focus
+
+- Understand the intended use of the AI-based system.
+- Identify users, stakeholders and affected groups.
+- Clarify expected outcomes and unacceptable behaviours.
+- Identify early AI-specific risks.
+- Define initial quality expectations.
+
+#### Typical QA Activities
+
+- Review the problem statement and intended use.
+- Identify critical decisions or outputs supported by AI.
+- Analyse possible consequences of incorrect, biased, unstable or misleading behaviour.
+- Review assumptions about users, data, environment and system constraints.
+- Support the definition of quality attributes relevant to the AI-based system.
+- Identify initial acceptance criteria.
+- Identify regulatory, ethical, security or operational concerns that may require specialist input.
+
+#### Expected Evidence
+
+- Problem statement review notes.
+- Intended use description.
+- Initial risk assessment.
+- Stakeholder and user mapping.
+- Initial quality expectations.
+- Initial acceptance criteria.
+- Assumption and constraint log.
+
+### 6.2 Data Assessment and Preparation
+
+At this stage, QA evaluates whether the data used by the AI-based system is suitable for its intended purpose.
+
+#### QA Focus
+
+- Assess the quality and suitability of data.
+- Identify data limitations and risks.
+- Check whether data preparation steps are controlled and documented.
+- Support traceability between data, model behaviour and system quality.
+
+#### Typical QA Activities
+
+- Review data sources, ownership and lineage.
+- Check data completeness, consistency and validity.
+- Identify missing values, outliers, duplicates and imbalance.
+- Assess whether the data is representative of the intended use context.
+- Review data labelling or annotation quality, when applicable.
+- Review data cleaning, transformation and feature engineering steps.
+- Check for potential data leakage.
+- Identify data drift risks.
+- Document known data limitations and their possible impact.
+
+#### Expected Evidence
+
+- Data quality assessment results.
+- Data profiling reports.
+- Data lineage documentation.
+- Data preparation review notes.
+- Missing values and outlier analysis.
+- Data limitation log.
+- Data leakage checks.
+- Data drift risk notes.
+
+### 6.3 AI Component Development and Validation
+
+At this stage, QA evaluates whether the AI component behaves adequately for its intended purpose before it is integrated into the wider system.
+
+#### QA Focus
+
+- Validate AI component behaviour.
+- Assess whether performance is acceptable for the intended use.
+- Analyse failures and limitations.
+- Check robustness, fairness and explainability concerns.
+- Ensure validation evidence is understandable and reviewable.
+
+#### Typical QA Activities
+
+- Review AI component objectives and assumptions.
+- Review selected metrics and their relevance to the problem.
+- Validate model or component performance against acceptance criteria.
+- Analyse error patterns and failure cases.
+- Test behaviour using representative, edge-case and adverse scenarios.
+- Assess robustness to input variation.
+- Review explainability outputs or reasoning traces, when applicable.
+- Compare behaviour across relevant user groups, segments or scenarios.
+- Review known limitations and residual risks.
+- Validate configuration, prompting, fine-tuning or model selection decisions, when applicable.
+
+#### Expected Evidence
+
+- Validation results.
+- Metric analysis.
+- Error analysis.
+- Edge-case test results.
+- Robustness assessment.
+- Fairness or bias assessment, when applicable.
+- Explainability review notes.
+- Known limitation log.
+- Validation summary.
+
+### 6.4 System Integration and Testing
+
+At this stage, QA evaluates whether the AI component works correctly as part of the complete software system.
+
+#### QA Focus
+
+- Validate integration between AI components and the surrounding system.
+- Check end-to-end behaviour.
+- Verify input and output handling.
+- Assess error handling, fallback mechanisms and traceability.
+- Confirm that users can interact with AI-supported outputs appropriately.
+
+#### Typical QA Activities
+
+- Test integration points with upstream and downstream systems.
+- Validate API contracts, data formats and response handling.
+- Test input validation and output interpretation.
+- Check fallback mechanisms when the AI component fails or produces low-confidence outputs.
+- Test error handling, logging and alerting.
+- Validate user interface behaviour for AI-supported outputs.
+- Test end-to-end workflows involving AI decisions, predictions, recommendations or generated content.
+- Check traceability between input, AI output, system action and user-visible result.
+- Assess non-functional behaviour affected by the AI component, such as performance, reliability and maintainability.
+
+#### Expected Evidence
+
+- Integration test results.
+- End-to-end test results.
+- API and interface validation results.
+- Error handling test results.
+- Fallback mechanism test results.
+- Logging and traceability checks.
+- User workflow test evidence.
+- Defect records.
+
+### 6.5 Acceptance and Release Readiness
+
+At this stage, QA supports an evidence-based decision on whether the AI-based system is ready for release.
+
+#### QA Focus
+
+- Consolidate quality evidence.
+- Assess whether acceptance criteria are met.
+- Review open risks, defects and limitations.
+- Support release decisions with clear recommendations.
+- Confirm monitoring and operational readiness.
+
+#### Typical QA Activities
+
+- Review test coverage and test results.
+- Review validation evidence from data, AI component and system testing activities.
+- Assess open defects and unresolved risks.
+- Review known limitations and their expected impact.
+- Confirm that acceptance criteria have been evaluated.
+- Confirm that monitoring requirements are defined.
+- Confirm that fallback, escalation and incident handling mechanisms are ready.
+- Prepare a QA release recommendation.
+- Support go/no-go decision-making.
+
+#### Expected Evidence
+
+- Test summary report.
+- Validation summary.
+- Risk assessment update.
+- Open defect and limitation log.
+- Acceptance criteria review.
+- Monitoring readiness checklist.
+- QA release recommendation.
+- Go/no-go decision record.
+
+### 6.6 Deployment and Operational Monitoring
+
+At this stage, QA supports the observation of the AI-based system in real use.
+
+#### QA Focus
+
+- Monitor whether the system continues to behave acceptably after deployment.
+- Detect degradation, drift, incidents or unexpected behaviour.
+- Review operational evidence.
+- Support timely response to quality issues.
+
+#### Typical QA Activities
+
+- Review production monitoring outputs.
+- Monitor model or AI component performance.
+- Monitor data drift and changes in input patterns.
+- Track incidents, defects and user feedback.
+- Review low-confidence, unexpected or harmful outputs.
+- Check whether alerts and escalation mechanisms work as expected.
+- Compare production behaviour with validation assumptions.
+- Review whether retraining, recalibration or configuration changes may be needed.
+- Support post-release quality reviews.
+
+#### Expected Evidence
+
+- Monitoring dashboards or reports.
+- Data drift reports.
+- Model degradation indicators.
+- Incident records.
+- User feedback analysis.
+- Alert and escalation records.
+- Production quality review notes.
+- Post-release assessment results.
+
+### 6.7 Continuous Improvement
+
+At this stage, QA uses evidence collected across the lifecycle to improve the AI-based system and the QA approach itself.
+
+#### QA Focus
+
+- Learn from production behaviour, incidents and feedback.
+- Improve quality controls.
+- Update tests, risks and documentation.
+- Support controlled change and reassessment.
+
+#### Typical QA Activities
+
+- Review lessons learned from testing, release and operation.
+- Update risk assessments based on new evidence.
+- Refine test scenarios and acceptance criteria.
+- Update data quality checks.
+- Review whether model, prompt, configuration or system changes require reassessment.
+- Support regression testing after AI-related changes.
+- Review the effectiveness of monitoring rules and thresholds.
+- Update documentation, decision records and governance artefacts.
+- Identify improvements to the QA process.
+
+#### Expected Evidence
+
+- Lessons learned.
+- Updated risk assessment.
+- Updated test scenarios.
+- Regression test results.
+- Updated monitoring rules.
+- Change assessment notes.
+- Updated documentation.
+- Improvement backlog.
 
 ## 7. Evidence and Artefacts
 
