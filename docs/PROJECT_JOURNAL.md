@@ -1,5 +1,63 @@
 # AI QA Framework - Project Journal
 
+## Session 008
+
+**Date**
+
+2026-07-11
+
+**Goal**
+
+Create the first reusable framework template, beginning with a lightweight `AI System Context Template`.
+
+**Completed**
+
+- Confirmed the repository was clean at the start of the session.
+- Confirmed that `docs/templates/` did not exist yet.
+- Created the `docs/templates/` folder.
+- Created `docs/templates/AI_System_Context_Template.md`.
+- Defined the template purpose and scope.
+- Added sections for:
+  - system overview;
+  - intended use;
+  - AI component context;
+  - data context;
+  - user and operational context;
+  - impact and criticality;
+  - quality concerns;
+  - initial risk notes;
+  - evidence needed;
+  - open questions;
+  - review and ownership.
+- Reviewed the template structure.
+- Added an explicit `Impact and Criticality` section to strengthen the risk-oriented context of the template.
+- Validated the template with `git diff --check`.
+- Amended the template commit to keep the document change as a single clean commit.
+
+**Key Decisions**
+
+- Reusable framework templates will be stored under `docs/templates/`.
+- The first reusable template is focused on understanding the AI system context before risk assessment, validation planning or release readiness decisions.
+- The template should remain lightweight and practical.
+- Impact and criticality should be captured early because they influence QA activities, evidence needs and governance expectations.
+
+**Review Notes**
+
+- The template is aligned with the AI QA Framework lifecycle and quality dimensions.
+- The structure supports early QA analysis without becoming a full risk assessment or validation plan.
+- The template is ready as the first reusable framework artefact.
+- Future templates can build on this context document.
+
+**Commit**
+
+- `2d97f2f` — `docs: add AI system context template`
+
+**Next Session**
+
+Create the next reusable framework template, focused on initial AI risk assessment.
+
+<br>
+
 ## Session 007
 
 **Date**
