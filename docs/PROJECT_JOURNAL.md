@@ -1,5 +1,79 @@
 # AI QA Framework - Project Journal
 
+## Session 009
+
+**Date**
+
+2026-07-11
+
+**Goal**
+
+Create the second reusable framework template, focused on the initial assessment and management of AI system risks.
+
+**Completed**
+
+- Confirmed that the repository was clean and synchronised with `origin/main` at the start of the session.
+- Reviewed the existing `AI System Context Template` to maintain structural and terminology consistency.
+- Reviewed the relevant sections of `docs/framework/AI_QA_Framework.md`, including:
+
+  - AI-specific risks;
+  - problem and context understanding;
+  - context and risk artefacts;
+  - risk-based governance;
+  - quality and risk decisions;
+  - reassessment triggers.
+- Created `docs/templates/AI_Risk_Assessment_Template.md`.
+- Defined sections for:
+
+  - assessment overview;
+  - risk assessment scope;
+  - risk rating approach;
+  - risk identification;
+  - risk analysis and prioritisation;
+  - risk treatment planning;
+  - residual risk and acceptance;
+  - evidence requirements;
+  - assumptions, constraints and unknowns;
+  - specialist review needs;
+  - reassessment triggers;
+  - review and ownership.
+- Added a lightweight likelihood and impact rating approach for initial assessments.
+- Clarified the distinction between initial risk, additional treatment actions and residual risk.
+- Added fields for the applicable risk method, risk tolerance and acceptance criteria.
+- Included the nine quality dimensions defined in the main framework as risk review categories.
+- Included legal, regulatory, domain-specific and third-party dependency risks.
+- Included explicit evidence ownership, risk ownership and residual risk acceptance responsibilities.
+- Standardised Markdown list formatting.
+- Reviewed the document heading structure.
+- Validated the staged file with `git diff --cached --check`.
+- Committed the new template.
+
+**Key Decisions**
+
+- The risk assessment should cover the complete AI system, not only the model or AI component.
+- The template should support an initial and reviewable risk assessment without replacing specialised risk assessments.
+- Risk ratings should support professional judgement rather than replace it.
+- Risk decisions should be evidence-based, traceable and assigned to explicit owners.
+- Residual risk should only be accepted by an authorised decision owner.
+- The depth of assessment and strength of evidence should be proportional to the risk associated with the AI system.
+
+**Review Notes**
+
+- The template is aligned with the framework principles, quality dimensions, lifecycle activities, evidence requirements and governance approach.
+- It supports the transition from AI system context understanding to risk-based QA planning.
+- It can be adapted to organisational risk methods while remaining vendor-independent.
+- The template is ready as the second reusable framework artefact.
+
+**Commit**
+
+- `6f76d59` — `docs: add AI risk assessment template`
+
+**Next Session**
+
+Create the next reusable framework template, focused on initial AI quality expectations and acceptance criteria.
+
+<br>
+
 ## Session 008
 
 **Date**
