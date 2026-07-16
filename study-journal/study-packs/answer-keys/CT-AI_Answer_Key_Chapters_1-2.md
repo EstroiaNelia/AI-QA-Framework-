@@ -3,7 +3,7 @@
 Suggested repository path:
 
 ```text
-docs/study-packs/answer-keys/CT-AI_Answer_Key_Chapters_1-2.md
+study-journal/study-packs/answer-keys/CT-AI_Answer_Key_Chapters_1-2.md
 ```
 
 ## Scope
